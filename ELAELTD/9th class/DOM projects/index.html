@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Event</title>
+</head>
+<body>
+    <!-- <h1 onclick="document.body.style.background = '#aaa'">Welcome to Event</h1>
+    <h2 onclick="colorChange()">Welcome to Event</h2>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <button onclick="changeColor('violet')">Violet</button>
+    <button onclick="changeColor('pink')">Pink</button>
+    <button onclick="changeColor('yellow')">Yellow</button>
+    <br>
+    <section id="dhaka">
+
+    </section>
+    <br><br>
+
+     button with id<br>
+    <button id="green">Green</button>
+    <button id="red">Red</button>
+    <button id="Blue">Blue</button> -->
+
+   <div id="blog">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rerum eaque voluptatum dolorum optio id ipsam adipisci corrupti quo sunt?</p>
+   </div>
+    <textarea name="" id="text-area" cols="30" rows="10"></textarea> <br>
+    <button id="post">Post</button>
+
+
+    <script>
+        document.getElementById('post').addEventListener('click', function(){
+            const textArea = document.getElementById('text-area');
+            const textAreaValue = textArea.value;
+            const para = document.createElement('p');
+            const blog = document.getElementById('blog');
+             
+            para.innerText = textAreaValue;
+            blog.appendChild(para);
+            textArea.value = '';
+            
+        })
+    </script>
+
+    <!-- <p id="changeData">Hello Bangladesh !</p>
+
+    <button onclick="changeEvent()">Change Text</button> -->
+
+    <script src="event.js"></script>
+</body>
+</html>
